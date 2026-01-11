@@ -19,18 +19,32 @@
 </header>
 
 <main>
-    <section>
-        <form action="bibidh.20251022@nami.edu.np" method="post" enctype="text/plain">
-            <label>Name</label>
-            <input type="text" name="name">
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Name:</strong> Bibidh Gautam</p>
+        <p><strong>Student ID:</strong> 20251022</p>
+        <p><strong>Email:</strong> bibidh.20251022@nami.edu.np</p>
+    </section>
 
-            <label>Email</label>
-            <input type="email" name="email">
+    <section class="contact-container">
+        <h2>Send a Message</h2>
+        <form action="mailto:bibidh.20251022@nami.edu.np" method="post" enctype="text/plain" class="contact-form">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="name" required>
+            </div>
 
-            <label>Message</label>
-            <textarea name="message"></textarea>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" required>
+            </div>
 
-            <button type="submit">Send</button>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea name="message" rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send</button>
         </form>
     </section>
 </main>
