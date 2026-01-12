@@ -199,6 +199,17 @@ section {
     border: none;
 }
 
+main section a, 
+main section a:visited {
+    color: #00ffff; 
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+main section a:hover {
+    color: #46abe5; 
+}
+
 footer {
     text-align: center;
     padding: 32px;
@@ -209,7 +220,7 @@ footer {
 
 .hero-layout {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
     gap: 48px;
     width: 100%;
@@ -221,11 +232,11 @@ footer {
 
 .image-row {
     display: flex;
-    flex-direction: row; 
-    justify-content: center; 
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    gap: 20px; 
-    flex-wrap: wrap; 
+    gap: 20px;
+    flex-wrap: wrap;
     width: 100%;
     margin: 20px 0;
 }
