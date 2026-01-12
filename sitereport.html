@@ -53,13 +53,13 @@
                 aspect-ratio: 16 / 9;<br>
                 height: auto;<br>
             }<br>
-            Here, I was having issue with the responsiveness of the embedded video. Originally, I used fixed width="1120" and height="630" attributes, which caused the video to overflow and overlap on small screens. So with Gemini's suggestion, I used aspect-ratio property in CSS to make the video responsive across different screen sizes.<br>
+            Location: style.css, Lines 212-218: Here, I was having issue with the responsiveness of the embedded video. Originally, I used fixed width="1120" and height="630" attributes, which caused the video to overflow and overlap on small screens. So with Gemini's suggestion, I used aspect-ratio property in CSS to make the video responsive across different screen sizes.<br>
             Next, I could see the blue background on the right side but couldn't identify which specific element was "pushing" the screen wider than it should be. <br>
             html, body { <br>
                 width: 100%; <br>
                 overflow-x: hidden; <br>
             }<br>
-            So, ChatGPT recommended applying 'overflow-x: hidden' to the body, maintaining a clean 100% width on mobile. <br>
+            Location: style.css, Lines 10-13: So, ChatGPT recommended applying 'overflow-x: hidden' to the body, maintaining a clean 100% width on mobile. <br>
             <b><br>6. Video Demonstration</b><br>            
             <div class="video-container">
                 <iframe 
