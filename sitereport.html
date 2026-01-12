@@ -46,9 +46,21 @@
             </div>                   
         </div>
 
-            <h2>5. Video Demonstration</h2>
-            <p>Website Demonstration Video:</p>
-            
+            <br><br><b>5. Use of AI</b><br>
+            Artificial Intelligence tools like Gemini and ChatGPT were utilized for assistance regarding design choices, debugging tips, and clarifying web development concepts. These tools provided quick access to information and suggestions that helped streamline the development process. However, all code and design decisions were ultimately made by me to ensure originality and personal learning, and a few segments were reviewed and refined with the help of AI tools such as: <br>
+            <br>.video-container iframe { <br>
+                width: 100%; <br>
+                aspect-ratio: 16 / 9;<br>
+                height: auto;<br>
+            }<br>
+            Here, I was having issue with the responsiveness of the embedded video. Originally, I used fixed width="1120" and height="630" attributes, which caused the video to overflow and overlap on small screens. So with Gemini's suggestion, I used aspect-ratio property in CSS to make the video responsive across different screen sizes.<br>
+            Next, I could see the blue background on the right side but couldn't identify which specific element was "pushing" the screen wider than it should be. <br>
+            html, body { <br>
+                width: 100%; <br>
+                overflow-x: hidden; <br>
+            }<br>
+            So, ChatGPT recommended applying 'overflow-x: hidden' to the body, maintaining a clean 100% width on mobile. <br>
+            <b><br>6. Video Demonstration</b><br>            
             <div class="video-container">
                 <iframe 
                     src="https://www.youtube.com/embed/vP3CmNX-pSU" 

@@ -219,7 +219,7 @@ section {
 
 section a, 
 section a:visited {
-    color: #00ffff !important;
+    color: #00ffff;
     text-decoration: underline;
 }
 main section a, 
