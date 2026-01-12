@@ -194,11 +194,34 @@ section {
     width: 100%;
     max-width: 800px;
     aspect-ratio: 16 / 9;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     border: none;
 }
 
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: none;
+}
+
+section a, 
+section a:visited {
+    color: #00ffff !important;
+    text-decoration: underline;
+}
 main section a, 
 main section a:visited {
     color: #00ffff; 
